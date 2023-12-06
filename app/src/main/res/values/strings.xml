@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PesonaPusaka</string>
+    <string name="welcome">Selamat Datang di\nPesonaPusaka</string>
+    <string name="next">Selanjutnya</string>
+    <string name="onboarding_1" translatable="false">“ Menemukan Keajaiban Sejarah dan Kekayaan Budaya di Setiap Langkah Wisatamu! “</string>
+    <string name="onboarding_2" translatable="false">“ Bersiaplah untuk memulai petualangan wisatamu yang tak terlupakan “</string>
+    <string name="onboarding_3" translatable="false">“ Lezatnya Keberagaman Kuliner Lokal. Dukung UMKM, Rasakan Sejarah dalam Setiap Rasa yang Menggugah Selera! “</string>
+    <string name="signin">Masuk Akun</string>
+    <string name="signin2">Masuk</string>
+    <string name="signup">Daftar Akun</string>
+    <string name="welcome_back">Selamat datang kembali! Belum punya akun?</string>
+    <string name="register_here">Daftar disini</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+</resources>
