@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#F7924A</color>
+    <color name="pink">#FFF4EE</color>
+    <color name="pale_orange">#FED4B6</color>
+    <color name="bright_red">#ffff4444</color>
+    <color name="black20">#33000000</color>
 </resources>

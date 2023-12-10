@@ -10,6 +10,38 @@
     <string name="signup">Daftar Akun</string>
     <string name="welcome_back">Selamat datang kembali! Belum punya akun?</string>
     <string name="register_here">Daftar disini</string>
+    <string name="signinhere">Masuk disini</string>
     <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="password">Kata Sandi</string>
+    <string name="alr_have_account">Sudah punya akun?</string>
+    <string name="name">Nama</string>
+    <string name="confirmpassword">Konfirmasi Kata Sandi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="candi_populer">Candi Populer</string>
+    <string name="mau_kemana_hari_ini">Mau kemana hari ini?</string>
+    <string name="halo_fara">Halo, Fara</string>
+    <string name="mau_jelajah_kemana_hari_ini">Mau jelajah kemana hari ini?</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="rekomendasi_umkm">Rekomendasi UMKM</string>
+    <string name="gemerlap_tradisi">Gemerlap Tradisi</string>
+    <string name="etikaberkunjung1" translatable="false">Pakaian Sopan: Kenakan pakaian yang sopan dan menghormati norma-norma keagamaan atau budaya setempat. Hindari pakaian yang terlalu terbuka atau singkat.</string>
+    <string name="etikaberkunjung2" translatable="false">Hindari Sentuhan Kasar: Jangan menyentuh atau merusak struktur candi, relief, atau artefak. Sentuhan kasar dapat merusak bahan bangunan kuno.</string>
+    <string name="etikaberkunjung3" translatable="false">Dilarang Membawa Makanan dan Minuman: Jangan membawa makanan atau minuman ke area candi untuk menjaga kebersihan dan kelestarian situs.</string>
+    <string name="favorit">Favorit</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="selectedlanguage">Indonesia</string>
+    <string name="cari_tradisi">Cari tradisi menarik</string>
+    <string name="wisata_candi">Wisata Candi</string>
+    <string name="arah">Arah</string>
+    <string name="preview">Preview</string>
+    <string name="sejarah">Sejarah</string>
+    <string name="lorem" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</string>
+    <string name="rekomendasi">Rekomendasi</string>
+    <string name="tempat_makan">Tempat Makan</string>
+    <string name="wisata_kuliner">Wisata Kuliner</string>
+    <string name="cari_tujuan_jelajahmu">Cari tujuan jelajahmu</string>
+    <string name="cari_tujuan_kulinermu">Cari tujuan kulinermu</string>
+    <string name="cerita_jelajah">Cerita Jelajah</string>
 </resources>

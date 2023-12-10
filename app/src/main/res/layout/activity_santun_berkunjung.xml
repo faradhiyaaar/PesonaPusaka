@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.santunberkunjung.SantunBerkunjungActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            style="@style/Widget.MaterialComponents.Button.IconOnly"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="60dp"
+            app:backgroundTint="@color/orange"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_santung_berkunjung"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CustomCardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="245dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_santun_berkunjung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Santun Berkunjung"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tv_santun_berkunjung"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Etika Berkunjung"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="1. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="2. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung2"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="3. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung3"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Etika Berkunjung"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="1. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="2. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung2"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="3. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung3"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Etika Berkunjung"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="1. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="2. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung2"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="3. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung3"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

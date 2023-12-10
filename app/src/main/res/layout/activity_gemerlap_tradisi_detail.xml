@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.gemerlaptradisi.GemerlapTradisiDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back"
+            style="@style/Widget.MaterialComponents.Button.IconOnly"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="60dp"
+            app:backgroundTint="@color/orange"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_tradisi"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_upacara_kuningan"
+            app:layout_constraintTop_toBottomOf="@id/btn_back" />
+
+        <TextView
+            android:id="@+id/tv_nama_tradisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_tradisi"
+            tools:text="Upacara Hari Kuningan" />
+
+        <ImageView
+            android:id="@+id/ic_maps"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_location"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_tradisi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_tradisi" />
+
+        <TextView
+            android:id="@+id/tv_lokasi_tradisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_maps"
+            app:layout_constraintStart_toEndOf="@+id/ic_maps"
+            app:layout_constraintTop_toTopOf="@+id/ic_maps"
+            tools:text="Candi Prambanan" />
+
+        <ImageView
+            android:id="@+id/ic_calendar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintStart_toStartOf="@+id/ic_maps"
+            app:layout_constraintTop_toBottomOf="@+id/ic_maps" />
+
+        <TextView
+            android:id="@+id/tv_tanggal_tradisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_calendar"
+            app:layout_constraintStart_toStartOf="@+id/tv_lokasi_tradisi"
+            app:layout_constraintTop_toTopOf="@+id/ic_calendar"
+            tools:text="12 Agustus" />
+
+        <TextView
+            android:id="@+id/tv_deskripsi_tradisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tanggal_tradisi"
+            tools:text="12 Agustus" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -13,6 +13,27 @@
         android:theme="@style/Theme.PesonaPusaka"
         tools:targetApi="31">
         <activity
+            android:name=".ui.ceritajelajah.CeritaJelajahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.wisatakuliner.WisataKulinerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.wisatacandi.WisataCandiDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.wisatacandi.WisataCandiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gemerlaptradisi.GemerlapTradisiDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gemerlaptradisi.GemerlapTradisiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.santunberkunjung.SantunBerkunjungActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.authentication.AuthActivity"
             android:exported="false" />
         <activity
@@ -26,7 +47,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

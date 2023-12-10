@@ -46,11 +46,13 @@
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusTopStart="10dp"
-        app:boxStrokeColor="#38B6B6B6"
+        app:boxStrokeColor="@color/orange"
+        app:cursorColor="@color/orange"
+        app:hintTextColor="@color/orange"
         app:layout_constraintTop_toBottomOf="@id/tv_daftar_akun">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_nama"
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="@string/email"
@@ -63,14 +65,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:passwordToggleEnabled="true"
         app:boxBackgroundMode="outline"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusTopStart="10dp"
-        app:boxStrokeColor="#38B6B6B6"
-        app:layout_constraintTop_toBottomOf="@id/tl_email">
+        app:boxStrokeColor="@color/orange"
+        app:cursorColor="@color/orange"
+        app:hintTextColor="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/tl_email"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
@@ -86,11 +90,11 @@
         android:layout_width="150dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/orange"
         android:text="@string/signin2"
         app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tl_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
