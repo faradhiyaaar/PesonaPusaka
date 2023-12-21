@@ -102,35 +102,15 @@
                     app:layout_constraintTop_toBottomOf="@+id/btn_direction" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="@string/preview"
-                    android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="@+id/tv_nama_candi"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_lokasi_candi" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_preview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"
-                    tools:listitem="@layout/item_preview" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:fontFamily="@font/poppins_semibold"
                     android:text="@string/sejarah"
                     android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="@+id/textView"
-                    app:layout_constraintTop_toBottomOf="@+id/rv_preview" />
+                    app:layout_constraintStart_toStartOf="@+id/tv_nama_candi"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_gemerlap_tradisi" />
 
                 <TextView
                     android:id="@+id/tv_sejarah"
@@ -173,6 +153,7 @@
                     android:fontFamily="@font/poppins"
                     android:text="@string/tempat_makan"
                     android:textSize="12sp"
+                    android:paddingBottom="80dp"
                     app:layout_constraintEnd_toEndOf="@+id/btn_food_recommendation"
                     app:layout_constraintStart_toStartOf="@+id/btn_food_recommendation"
                     app:layout_constraintTop_toBottomOf="@+id/btn_food_recommendation" />
@@ -186,14 +167,13 @@
                     android:text="@string/gemerlap_tradisi"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="@+id/textView3"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_tempat_makan" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_lokasi_candi" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_gemerlap_tradisi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingBottom="30dp"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     app:layout_constraintTop_toBottomOf="@+id/textView4"
                     tools:layout_editor_absoluteX="4dp"

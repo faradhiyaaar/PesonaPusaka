@@ -1,15 +1,17 @@
 package com.capstone.pesonapusaka.ui.home
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.asLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.capstone.pesonapusaka.data.model.Candi
-import com.capstone.pesonapusaka.data.model.Tradisi
-import com.capstone.pesonapusaka.data.model.UMKM
+import com.capstone.pesonapusaka.data.model.CandiModel
+import com.capstone.pesonapusaka.data.model.WisataKuliner
 import com.capstone.pesonapusaka.databinding.FragmentHomeBinding
 import com.capstone.pesonapusaka.ui.ceritajelajah.CeritaJelajahActivity
 import com.capstone.pesonapusaka.ui.gemerlaptradisi.GemerlapTradisiActivity
@@ -19,7 +21,12 @@ import com.capstone.pesonapusaka.ui.home.adapter.UmkmAdapter
 import com.capstone.pesonapusaka.ui.santunberkunjung.SantunBerkunjungActivity
 import com.capstone.pesonapusaka.ui.wisatacandi.WisataCandiActivity
 import com.capstone.pesonapusaka.ui.wisatakuliner.WisataKulinerActivity
+import com.capstone.pesonapusaka.utils.Result
+import com.capstone.pesonapusaka.utils.glide
+import com.capstone.pesonapusaka.utils.listTradisi
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeFragment: Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
@@ -27,6 +34,7 @@ class HomeFragment: Fragment() {
     private val candiPopulerAdapter by lazy { CandiPopulerAdapter() }
     private val rekomendasiUmkmAdapter by lazy { UmkmAdapter() }
     private val gemerlapTradisiAdapter by lazy { GemerlapTradisiAdapter() }
+    private val viewModel by viewModels<HomeViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,11 +48,9 @@ class HomeFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setupCandiPopuler()
-        setupRekomendasiUmkm()
         setupGemerlapTradisi()
         setActions()
-
+        observer()
     }
 
     private fun setActions() {
@@ -85,34 +91,23 @@ class HomeFragment: Fragment() {
         }
     }
 
-    private fun setupCandiPopuler() {
+    private fun setupCandiPopuler(data: List<CandiModel>?) {
         binding.rvCandiPopuler.apply {
             adapter = candiPopulerAdapter
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         }
 
-        val listCandiDummy = mutableListOf<Candi>()
-        val candi = Candi(namaCandi = "Candi Ratu Boko", lokasiCandi = "Daerah Istimewa Yogyakarta")
-        for (i in 0..10) {
-            listCandiDummy.add(candi)
+        data?.let {
+            candiPopulerAdapter.differ.submitList(it)
         }
-
-        candiPopulerAdapter.differ.submitList(listCandiDummy)
     }
 
-    private fun setupRekomendasiUmkm() {
+    private fun setupRekomendasiUmkm(listWisataKuliner: List<WisataKuliner>) {
         binding.rvRekomendasiUmkm.apply {
             adapter = rekomendasiUmkmAdapter
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         }
-
-        val listUmkmDummy = mutableListOf<UMKM>()
-        val umkm = UMKM(namaUmkm = "Warung Soto Sawah", namaPenjualUmkm = "Pak Par")
-        for (i in 0..10) {
-            listUmkmDummy.add(umkm)
-        }
-
-        rekomendasiUmkmAdapter.differ.submitList(listUmkmDummy)
+        rekomendasiUmkmAdapter.differ.submitList(listWisataKuliner)
     }
 
     private fun setupGemerlapTradisi() {
@@ -121,13 +116,42 @@ class HomeFragment: Fragment() {
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         }
 
-        val listTradisi = mutableListOf<Tradisi>()
-        val tradisi = Tradisi(namaTradisi = "Upacara Angayuba")
-        for (i in 0..10) {
-            listTradisi.add(tradisi)
+        gemerlapTradisiAdapter.differ.submitList(listTradisi)
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun observer() {
+        val user = viewModel.user.asLiveData()
+        user.observe(viewLifecycleOwner) {
+            it.avatar?.let { avatar ->
+                binding.ivProfil.glide(avatar)
+                binding.tvHelloUsername.text = "Hello, ${it.name}"
+            }
         }
 
-        gemerlapTradisiAdapter.differ.submitList(listTradisi)
+        val candi = viewModel.candiRecommendation.asLiveData()
+        candi.observe(viewLifecycleOwner) {
+            when(it) {
+                is Result.Error -> {}
+                is Result.Loading -> {}
+                is Result.Success -> { setupCandiPopuler(it.data) }
+                is Result.Void -> {}
+            }
+        }
+
+        val umkm = viewModel.wisataKuliner.asLiveData()
+        umkm.observe(viewLifecycleOwner) { result ->
+            when(result) {
+                is Result.Error -> {}
+                is Result.Loading -> {}
+                is Result.Success -> {
+                    result.data?.let {
+                        setupRekomendasiUmkm(it)
+                    }
+                }
+                is Result.Void -> {}
+            }
+        }
     }
 
     override fun onDestroyView() {

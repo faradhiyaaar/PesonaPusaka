@@ -36,4 +36,16 @@
     <string name="cari_tujuan_jelajahmu">Find your adventure destination</string>
     <string name="cari_tujuan_kulinermu">Find your culinary destination</string>
     <string name="cerita_jelajah">Trip Stories</string>
+    <string name="ayo_berbagi_cerita_jelajahmu">Share your story!</string>
+    <string name="upload_foto_dan_ceritamu">Upload your photo and story</string>
+    <string name="ayo_berbagi_kisah">Share your adventure story here...</string>
+    <string name="upload">Upload</string>
+    <string name="tambah_foto">Pick a photo</string>
+    <string name="tangkap_sebuah_foto">Take a picture</string>
+    <string name="upload_dari_galeri">Pick from gallery</string>
+    <string name="maps">Maps</string>
+    <string name="no_favorite">Anda tidak punya favorite</string>
+    <string name="forgot_password">Lupa kata sandi?</string>
+    <string name="tulis_email">Use your previous email</string>
+    <string name="kirim">Send</string>
 </resources>

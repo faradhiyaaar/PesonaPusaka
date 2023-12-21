@@ -32,7 +32,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/iv_umkm"
+                    android:id="@+id/iv_candi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:contentDescription="@null"
@@ -83,7 +83,7 @@
                 app:backgroundTint="@color/white"
                 app:cornerRadius="50dp"
                 app:icon="@drawable/ic_love"
-                app:iconTint="@color/bright_red"
+                app:iconTint="@android:color/darker_gray"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_lokasi_candi"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/tv_nama_candi" />

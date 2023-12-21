@@ -4,6 +4,6 @@ data class UMKM(
     val namaUmkm: String? = null,
     val namaPenjualUmkm: String? = null,
     val fotoUmkm: String? = null,
-    val lat: Float? = null,
-    val long: Float? = null
+    val lat: Double? = null,
+    val long: Double? = null
 )

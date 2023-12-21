@@ -37,8 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:contentDescription="@null"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/iv_umkm" />
+                    android:scaleType="centerCrop" />
 
                 <com.google.android.material.card.MaterialCardView
                     style="@style/CustomCardViewStyle2"
@@ -48,11 +47,12 @@
                     app:cardBackgroundColor="@color/pink">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_avatar"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        android:src="@drawable/foto_orang" />
+                        android:src="@drawable/ic_profile" />
                 </com.google.android.material.card.MaterialCardView>
             </androidx.cardview.widget.CardView>
 

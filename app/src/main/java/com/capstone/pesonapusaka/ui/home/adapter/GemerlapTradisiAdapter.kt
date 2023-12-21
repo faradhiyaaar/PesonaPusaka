@@ -1,5 +1,6 @@
 package com.capstone.pesonapusaka.ui.home.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -7,6 +8,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.capstone.pesonapusaka.data.model.Tradisi
 import com.capstone.pesonapusaka.databinding.ItemGemerlapTradisiBinding
+import com.capstone.pesonapusaka.ui.gemerlaptradisi.GemerlapTradisiDetailActivity
+import com.capstone.pesonapusaka.utils.Dimens
+import com.capstone.pesonapusaka.utils.glide
 
 class GemerlapTradisiAdapter: RecyclerView.Adapter<GemerlapTradisiAdapter.GemerlapTradisiViewHolder>() {
 
@@ -15,6 +19,9 @@ class GemerlapTradisiAdapter: RecyclerView.Adapter<GemerlapTradisiAdapter.Gemerl
             fun bind(tradisi: Tradisi) {
                 with(binding) {
                     tvNamaUpacara.text = tradisi.namaTradisi
+                    tradisi.fotoTradisi?.let {
+                        ivUpacara.glide(tradisi.fotoTradisi)
+                    }
                 }
             }
     }
@@ -45,5 +52,14 @@ class GemerlapTradisiAdapter: RecyclerView.Adapter<GemerlapTradisiAdapter.Gemerl
     override fun onBindViewHolder(holder: GemerlapTradisiViewHolder, position: Int) {
         val tradisi = differ.currentList[position]
         holder.bind(tradisi)
+
+        val context = holder.itemView.context
+        holder.itemView.setOnClickListener {
+            context.startActivity(
+                Intent(context, GemerlapTradisiDetailActivity::class.java).also {
+                    it.putExtra(Dimens.TRADISI, tradisi)
+                }
+            )
+        }
     }
 }

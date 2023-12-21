@@ -5,30 +5,35 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.capstone.pesonapusaka.R
-import com.capstone.pesonapusaka.data.model.Story
+import com.capstone.pesonapusaka.data.model.StoryModel
 import com.capstone.pesonapusaka.databinding.ItemStoryBinding
+import com.capstone.pesonapusaka.utils.glide
 
 class StoryAdapter: RecyclerView.Adapter<StoryAdapter.StoryViewHolder>() {
 
     inner class StoryViewHolder(private val binding: ItemStoryBinding):
         RecyclerView.ViewHolder(binding.root) {
-            fun bind(story: Story) {
+            fun bind(story: StoryModel) {
                 with(binding) {
-                    tvStory.text = story.story
-                    tvNamaUser.text = story.nama
-                    tvTanggalStory.text = story.tanggal
-                    ivStory.setImageResource(R.drawable.iv_candi)
+                    tvStory.text = story.content
+                    tvNamaUser.text = story.name
+                    tvTanggalStory.text = story.email
+                    story.image?.let {
+                        ivStory.glide(it)
+                    }
+                    story.avatar?.let {
+                        ivAvatar.glide(it)
+                    }
                 }
             }
     }
 
-    private val diffUtil = object: DiffUtil.ItemCallback<Story>() {
-        override fun areItemsTheSame(oldItem: Story, newItem: Story): Boolean {
-            return oldItem.nama == newItem.nama
+    private val diffUtil = object: DiffUtil.ItemCallback<StoryModel>() {
+        override fun areItemsTheSame(oldItem: StoryModel, newItem: StoryModel): Boolean {
+            return oldItem.id == newItem.id
         }
 
-        override fun areContentsTheSame(oldItem: Story, newItem: Story): Boolean {
+        override fun areContentsTheSame(oldItem: StoryModel, newItem: StoryModel): Boolean {
             return oldItem == newItem
         }
 

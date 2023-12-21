@@ -8,7 +8,7 @@ data class Candi(
     val fotoCandi: String? = null,
     val namaCandi: String? = null,
     val lokasiCandi: String? = null,
-    val sejarah: String? = null,
-    val lat: Float? = null,
-    val lng: Float? = null
+    val deskripsi: String? = null,
+    val lat: Double? = null,
+    val lng: Double? = null
 ): Parcelable

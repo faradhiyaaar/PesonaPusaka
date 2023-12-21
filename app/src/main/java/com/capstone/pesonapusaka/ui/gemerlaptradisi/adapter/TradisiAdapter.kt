@@ -10,6 +10,7 @@ import com.capstone.pesonapusaka.data.model.Tradisi
 import com.capstone.pesonapusaka.databinding.ItemTradisiBinding
 import com.capstone.pesonapusaka.ui.gemerlaptradisi.GemerlapTradisiDetailActivity
 import com.capstone.pesonapusaka.utils.Dimens.TRADISI
+import com.capstone.pesonapusaka.utils.glide
 
 class TradisiAdapter: RecyclerView.Adapter<TradisiAdapter.TradisiViewHolder>() {
 
@@ -19,6 +20,9 @@ class TradisiAdapter: RecyclerView.Adapter<TradisiAdapter.TradisiViewHolder>() {
                 with(binding) {
                     tvNamaTradisi.text = tradisi.namaTradisi
                     tvTanggalTradisi.text = tradisi.tanggalTradisi
+                    tradisi.fotoTradisi?.let {
+                        ivTradisi.glide(it)
+                    }
                 }
             }
     }

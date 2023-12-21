@@ -74,7 +74,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Etika Berkunjung"
+                            android:text="Etika Pakaian dan Penampilan"
                             android:textSize="18sp"
                             android:fontFamily="@font/poppins_semibold"/>
 
@@ -136,6 +136,26 @@
                                 android:textSize="16sp"
                                 android:fontFamily="@font/poppins"
                                 android:text="@string/etikaberkunjung3"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="4. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaberkunjung4"/>
 
                         </LinearLayout>
                         <View
@@ -155,7 +175,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Etika Berkunjung"
+                            android:text="Etika Perilaku dan Kepatuhan"
                             android:textSize="18sp"
                             android:fontFamily="@font/poppins_semibold"/>
 
@@ -176,7 +196,7 @@
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
                                 android:fontFamily="@font/poppins"
-                                android:text="@string/etikaberkunjung1"/>
+                                android:text="@string/etikaperilaku1"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -196,7 +216,7 @@
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
                                 android:fontFamily="@font/poppins"
-                                android:text="@string/etikaberkunjung2"/>
+                                android:text="@string/etikaperilaku2"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -216,7 +236,47 @@
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
                                 android:fontFamily="@font/poppins"
-                                android:text="@string/etikaberkunjung3"/>
+                                android:text="@string/etikaperilaku3"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="4. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaperilaku4"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="5. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaperilaku5"/>
 
                         </LinearLayout>
                         <View
@@ -236,7 +296,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Etika Berkunjung"
+                            android:text="Etika Fotografi dan Rekam Video"
                             android:textSize="18sp"
                             android:fontFamily="@font/poppins_semibold"/>
 
@@ -257,7 +317,7 @@
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
                                 android:fontFamily="@font/poppins"
-                                android:text="@string/etikaberkunjung1"/>
+                                android:text="@string/etikafotografi1"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -277,7 +337,7 @@
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
                                 android:fontFamily="@font/poppins"
-                                android:text="@string/etikaberkunjung2"/>
+                                android:text="@string/etikafotografi2"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -297,7 +357,47 @@
                                 android:layout_height="wrap_content"
                                 android:textSize="16sp"
                                 android:fontFamily="@font/poppins"
-                                android:text="@string/etikaberkunjung3"/>
+                                android:text="@string/etikafotografi3"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="4. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikafotografi4"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="5. "/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikafotografi5"/>
 
                         </LinearLayout>
                         <View
@@ -306,6 +406,347 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="30dp"
                             android:background="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Etika Kebersihan dan Lingkungan"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaKL1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="2"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaKL2"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="3"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaKL3"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="4"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/etikaKL4"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Memahami Nilai Sejarah"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/memahamisejarah1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="2"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/memahamisejarah2"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="3"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/memahamisejarah3"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="4"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/memahamisejarah4"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="5"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/memahamisejarah5"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Etika Ketertiban dan Keamanan"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/ketertibandanK1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="2"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/ketertibandanK2"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="3"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/ketertibandanK3"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="4"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/ketertibandanK4"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginBottom="30dp">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="5"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:text="@string/ketertibandanK5"/>
+
+                        </LinearLayout>
 
                     </LinearLayout>
 

@@ -1,8 +1,23 @@
 package com.capstone.pesonapusaka.utils
 
+import android.Manifest
+
 object Dimens {
-    const val LOREM =
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Tempus imperdiet nulla malesuada pellentesque elit. Ut venenatis tellus in metus vulputate eu scelerisque. Eros in cursus turpis massa tincidunt dui ut ornare lectus. Viverra vitae congue eu consequat ac. Pharetra sit amet aliquam id. Tellus at urna condimentum mattis pellentesque id. Proin sed libero enim sed faucibus turpis in. Velit sed ullamcorper morbi tincidunt ornare massa eget.\n" + "\n" + "Mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Arcu odio ut sem nulla pharetra. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Morbi tincidunt ornare massa eget egestas purus viverra. Nulla aliquet enim tortor at auctor urna nunc id. At elementum eu facilisis sed odio morbi. Ac ut consequat semper viverra nam. Nunc congue nisi vitae suscipit tellus mauris a. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nunc faucibus a pellentesque sit amet porttitor. Elementum tempus egestas sed sed risus. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac."
+    const val BASE_URL = "https://pesona-pusaka-api.uc.r.appspot.com/api/"
+    const val ML_BASE_URL = "https://ml-dot-pesona-pusaka-api.uc.r.appspot.com/api/"
     const val TRADISI = "tradisi"
     const val CANDI = "candi"
+    const val LOCATION = "location"
+    const val NAMA_LOKASI = "nama_lokasi"
+    const val SESSION = "session"
+    const val USER_ID = "user_id"
+    const val NAME = "name"
+    const val AVATAR = "avatar"
+    const val EMAIL = "email"
+    const val FAVOURITE_DB = "favdb"
+    val PERMISSIONS = arrayOf(
+        Manifest.permission.CAMERA,
+        Manifest.permission.READ_EXTERNAL_STORAGE,
+        Manifest.permission.WRITE_EXTERNAL_STORAGE
+    )
 }

@@ -3,8 +3,12 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-android")
     id("kotlin-parcelize")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
     id("androidx.navigation.safeargs.kotlin")
 }
+
+apply(plugin = "kotlin-kapt")
 
 android {
     namespace = "com.capstone.pesonapusaka"
@@ -61,5 +65,35 @@ dependencies {
 
     // Circle Image View
     implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    //maps
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+
+    //preference
+    implementation("androidx.preference:preference-ktx:1.2.1")
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //Okhttp
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+
+    //Livedata
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
+
+    //room
+    implementation("androidx.room:room-ktx:2.6.0-beta01")
+    kapt("androidx.room:room-compiler:2.6.0-beta01")
 
 }

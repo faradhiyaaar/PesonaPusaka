@@ -5,27 +5,29 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.capstone.pesonapusaka.data.model.Candi
+import com.capstone.pesonapusaka.data.model.Favorite
 import com.capstone.pesonapusaka.databinding.ItemFavoritBinding
+import com.capstone.pesonapusaka.utils.glide
 
 class FavoriteAdapter: RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>() {
 
-    inner class FavoriteViewHolder(private val binding: ItemFavoritBinding):
+    inner class FavoriteViewHolder(val binding: ItemFavoritBinding):
         RecyclerView.ViewHolder(binding.root) {
-            fun bind(candi: Candi) {
+            fun bind(fav: Favorite) {
                 with(binding) {
-                    tvNamaFavorit.text = candi.namaCandi
-                    tvLokasiFavorit.text = candi.lokasiCandi
+                    tvNamaFavorit.text = fav.name
+                    tvLokasiFavorit.text = fav.location
+                    ivUmkm.glide(fav.thumbnail)
                 }
             }
     }
 
-    private val diffUtil = object: DiffUtil.ItemCallback<Candi>() {
-        override fun areItemsTheSame(oldItem: Candi, newItem: Candi): Boolean {
-            return oldItem.namaCandi == newItem.namaCandi
+    private val diffUtil = object: DiffUtil.ItemCallback<Favorite>() {
+        override fun areItemsTheSame(oldItem: Favorite, newItem: Favorite): Boolean {
+            return oldItem.id == newItem.id
         }
 
-        override fun areContentsTheSame(oldItem: Candi, newItem: Candi): Boolean {
+        override fun areContentsTheSame(oldItem: Favorite, newItem: Favorite): Boolean {
             return oldItem == newItem
         }
 
@@ -44,7 +46,13 @@ class FavoriteAdapter: RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>(
     override fun getItemCount(): Int = differ.currentList.size
 
     override fun onBindViewHolder(holder: FavoriteViewHolder, position: Int) {
-        val candi = differ.currentList[position]
-        holder.bind(candi)
+        val favorite = differ.currentList[position]
+        holder.bind(favorite)
+
+        holder.binding.btnFavorite.setOnClickListener {
+            onClick?.invoke(favorite)
+        }
     }
+
+    var onClick: ((Favorite) -> Unit)? = null
 }

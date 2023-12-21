@@ -1,13 +1,16 @@
 package com.capstone.pesonapusaka
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.capstone.pesonapusaka.databinding.ActivityMainBinding
+import com.capstone.pesonapusaka.ui.maps.MapsActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMainBinding? = null
@@ -25,7 +28,9 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.setupWithNavController(navController)
 
         binding.btnMaps.setOnClickListener {
-            Toast.makeText(this, "Maps", Toast.LENGTH_SHORT).show()
+            startActivity(
+                Intent(this, MapsActivity::class.java)
+            )
         }
     }
 

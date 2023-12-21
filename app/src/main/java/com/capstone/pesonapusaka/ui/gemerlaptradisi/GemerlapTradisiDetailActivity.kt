@@ -3,12 +3,12 @@ package com.capstone.pesonapusaka.ui.gemerlaptradisi
 import android.os.Build
 import android.os.Bundle
 import android.view.WindowManager
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.capstone.pesonapusaka.R
 import com.capstone.pesonapusaka.data.model.Tradisi
 import com.capstone.pesonapusaka.databinding.ActivityGemerlapTradisiDetailBinding
 import com.capstone.pesonapusaka.utils.Dimens.TRADISI
+import com.capstone.pesonapusaka.utils.glide
 
 @Suppress("DEPRECATION")
 class GemerlapTradisiDetailActivity : AppCompatActivity() {
@@ -41,6 +41,7 @@ class GemerlapTradisiDetailActivity : AppCompatActivity() {
                 tvDeskripsiTradisi.text = tradisi.deskripsiTradisi
                 tvLokasiTradisi.text = tradisi.lokasiTradisi
                 tvTanggalTradisi.text = tradisi.tanggalTradisi
+                ivTradisi.glide(tradisi.fotoTradisi!!)
             }
 
             btnBack.setOnClickListener {

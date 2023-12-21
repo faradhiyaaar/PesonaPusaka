@@ -17,7 +17,9 @@ import com.capstone.pesonapusaka.databinding.ActivityOnboardingBinding
 import com.capstone.pesonapusaka.ui.authentication.AuthActivity
 import com.capstone.pesonapusaka.utils.hide
 import com.capstone.pesonapusaka.utils.show
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class OnboardingActivity : AppCompatActivity() {
 
     private var _binding: ActivityOnboardingBinding? = null
@@ -33,6 +35,7 @@ class OnboardingActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
+        checkOnBoarding()
 
         setupOnBoardingItems()
         binding.viewPager2.adapter = onboardingAdapter
@@ -41,7 +44,7 @@ class OnboardingActivity : AppCompatActivity() {
         setupBoardingIndicators()
         setActiveIndicators(0)
 
-        binding.viewPager2.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
+        binding.viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 setActiveIndicators(position)
@@ -91,7 +94,7 @@ class OnboardingActivity : AppCompatActivity() {
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
             )
-        layoutParams.setMargins(8,0,8,0)
+        layoutParams.setMargins(8, 0, 8, 0)
         for (i in indicators.indices) {
             indicators[i] = ImageView(applicationContext)
             indicators[i].apply {
@@ -118,7 +121,7 @@ class OnboardingActivity : AppCompatActivity() {
                         R.drawable.indicator_active
                     )
                 )
-            }else {
+            } else {
                 imageView.setImageDrawable(
                     ContextCompat.getDrawable(
                         applicationContext,
@@ -127,9 +130,9 @@ class OnboardingActivity : AppCompatActivity() {
                 )
             }
         }
-        if (index == onboardingAdapter.itemCount -1) {
+        if (index == onboardingAdapter.itemCount - 1) {
             binding.btnNext.show()
-        }else {
+        } else {
             binding.btnNext.hide()
         }
     }
@@ -140,4 +143,15 @@ class OnboardingActivity : AppCompatActivity() {
         editor.putBoolean("OnBoarding", true)
         editor.apply()
     }
+
+    private fun checkOnBoarding() {
+        val sharedPref = getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        val isOnBoardingFinished = sharedPref.getBoolean("OnBoarding", false)
+        if (isOnBoardingFinished) {
+            val intent = Intent(this, AuthActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
+
 }

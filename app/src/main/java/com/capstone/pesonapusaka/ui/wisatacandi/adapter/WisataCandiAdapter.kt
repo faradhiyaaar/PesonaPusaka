@@ -6,29 +6,33 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.capstone.pesonapusaka.data.model.Candi
+import com.capstone.pesonapusaka.data.model.CandiModel
 import com.capstone.pesonapusaka.databinding.ItemWisataCandiBinding
 import com.capstone.pesonapusaka.ui.wisatacandi.WisataCandiDetailActivity
 import com.capstone.pesonapusaka.utils.Dimens.CANDI
+import com.capstone.pesonapusaka.utils.glide
 
-class WisataCandiAdapter: RecyclerView.Adapter<WisataCandiAdapter.WisataCandiViewHolder>() {
+class WisataCandiAdapter : RecyclerView.Adapter<WisataCandiAdapter.WisataCandiViewHolder>() {
 
-    inner class WisataCandiViewHolder(private val binding: ItemWisataCandiBinding):
+    inner class WisataCandiViewHolder(val binding: ItemWisataCandiBinding) :
         RecyclerView.ViewHolder(binding.root) {
-            fun bind(candi: Candi) {
-                with(binding) {
-                    tvLokasiCandi.text = candi.lokasiCandi
-                    tvNamaCandi.text = candi.namaCandi
+        fun bind(candi: CandiModel) {
+            with(binding) {
+                tvNamaCandi.text = candi.name
+                tvLokasiCandi.text = candi.location
+                candi.thumbnail?.let {
+                    ivCandi.glide(candi.thumbnail)
                 }
             }
+        }
     }
 
-    private val diffUtil = object: DiffUtil.ItemCallback<Candi>() {
-        override fun areItemsTheSame(oldItem: Candi, newItem: Candi): Boolean {
-            return oldItem.namaCandi == newItem.namaCandi
+    private val diffUtil = object : DiffUtil.ItemCallback<CandiModel>() {
+        override fun areItemsTheSame(oldItem: CandiModel, newItem: CandiModel): Boolean {
+            return oldItem.id == newItem.id
         }
 
-        override fun areContentsTheSame(oldItem: Candi, newItem: Candi): Boolean {
+        override fun areContentsTheSame(oldItem: CandiModel, newItem: CandiModel): Boolean {
             return oldItem == newItem
         }
 
@@ -58,5 +62,11 @@ class WisataCandiAdapter: RecyclerView.Adapter<WisataCandiAdapter.WisataCandiVie
                 }
             )
         }
+
+        holder.binding.btnFavorite.setOnClickListener {
+            onClick?.invoke(candi)
+        }
     }
+
+    var onClick: ((CandiModel) -> Unit)? = null
 }

@@ -2,8 +2,8 @@
     <string name="app_name">PesonaPusaka</string>
     <string name="welcome">Selamat Datang di\nPesonaPusaka</string>
     <string name="next">Selanjutnya</string>
-    <string name="onboarding_1" translatable="false">“ Menemukan Keajaiban Sejarah dan Kekayaan Budaya di Setiap Langkah Wisatamu! “</string>
-    <string name="onboarding_2" translatable="false">“ Bersiaplah untuk memulai petualangan wisatamu yang tak terlupakan “</string>
+    <string name="onboarding_1" translatable="false">“ Bersiaplah untuk memulai petualangan wisatamu yang tak terlupakan “</string>
+    <string name="onboarding_2" translatable="false">“ Menemukan Keajaiban Sejarah dan Kekayaan Budaya di Setiap Langkah Wisatamu! “</string>
     <string name="onboarding_3" translatable="false">“ Lezatnya Keberagaman Kuliner Lokal. Dukung UMKM, Rasakan Sejarah dalam Setiap Rasa yang Menggugah Selera! “</string>
     <string name="signin">Masuk Akun</string>
     <string name="signin2">Masuk</string>
@@ -17,7 +17,6 @@
     <string name="name">Nama</string>
     <string name="confirmpassword">Konfirmasi Kata Sandi</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="candi_populer">Candi Populer</string>
     <string name="mau_kemana_hari_ini">Mau kemana hari ini?</string>
@@ -26,9 +25,10 @@
     <string name="lihat_semua">Lihat Semua</string>
     <string name="rekomendasi_umkm">Rekomendasi UMKM</string>
     <string name="gemerlap_tradisi">Gemerlap Tradisi</string>
-    <string name="etikaberkunjung1" translatable="false">Pakaian Sopan: Kenakan pakaian yang sopan dan menghormati norma-norma keagamaan atau budaya setempat. Hindari pakaian yang terlalu terbuka atau singkat.</string>
-    <string name="etikaberkunjung2" translatable="false">Hindari Sentuhan Kasar: Jangan menyentuh atau merusak struktur candi, relief, atau artefak. Sentuhan kasar dapat merusak bahan bangunan kuno.</string>
-    <string name="etikaberkunjung3" translatable="false">Dilarang Membawa Makanan dan Minuman: Jangan membawa makanan atau minuman ke area candi untuk menjaga kebersihan dan kelestarian situs.</string>
+    <string name="etikaberkunjung1" translatable="false">Pilih pakaian yang sopan dan menutupi bagian tubuh. Ini menghormati nilai-nilai keagamaan dan kebudayaan.</string>
+    <string name="etikaberkunjung2" translatable="false">Hindarilah pemakaian pakaian yang terlalu terbuka atau provokatif.</string>
+    <string name="etikaberkunjung3" translatable="false">Perhatikan peraturan khusus terkait pakaian yang mungkin diberlakukan oleh pengelola candi atau tempat ibadah, dan patuhi aturan tersebut dengan seksama.</string>
+    <string name="etikaberkunjung4" translatable="false">Pilih pakaian yang nyaman untuk aktivitas berkunjung, terutama jika Anda berencana untuk menjelajahi area candi yang luas.</string>
     <string name="favorit">Favorit</string>
     <string name="bahasa">Bahasa</string>
     <string name="selectedlanguage">Indonesia</string>
@@ -44,4 +44,40 @@
     <string name="cari_tujuan_jelajahmu">Cari tujuan jelajahmu</string>
     <string name="cari_tujuan_kulinermu">Cari tujuan kulinermu</string>
     <string name="cerita_jelajah">Cerita Jelajah</string>
+    <string name="ayo_berbagi_cerita_jelajahmu">Ayo Berbagi Cerita Jelajahmu!</string>
+    <string name="upload_foto_dan_ceritamu">Upload foto dan ceritamu</string>
+    <string name="ayo_berbagi_kisah">Ayo berbagi kisah jelajahmu disini...</string>
+    <string name="upload">Upload</string>
+    <string name="tambah_foto">Tambah sebuah foto</string>
+    <string name="tangkap_sebuah_foto">Tangkap sebuah foto</string>
+    <string name="upload_dari_galeri">Upload dari galeri</string>
+    <string name="maps">Maps</string>
+    <string name="etikaperilaku1" translatable="false">Pertahankan ketenangan di sekitar candi dengan tidak berbicara keras atau melakukan tindakan yang mengganggu ketenangan.</string>
+    <string name="etikaperilaku2" translatable="false">Ikuti aturan yang ada di tempat tersebut, seperti larangan merokok, dan ikuti petunjuk petugas atau papan petunjuk.</string>
+    <string name="etikaperilaku3" translatable="false">Untuk menjaga keheningan dan suasana tenang di sekitar candi, hindari penggunaan gadget dengan volume suara tinggi atau pemutaran musik yang mengganggu.</string>
+    <string name="etikaperilaku4" translatable="false">Jika ada area yang ditandai sebagai ruang pribadi atau terbatas, hindari masuk ke area tersebut untuk menjaga privasi penghuni atau kelestarian lingkungan candi.</string>
+    <string name="etikaperilaku5" translatable="false">Jika candi memiliki area ibadah, hindarilah mengobrol atau berbicara di dalamnya agar pengunjung lain dapat menjalankan kegiatan ibadahnya dengan khusyuk.</string>
+    <string name="etikafotografi1" translatable="false">Gunakan kamera dengan bijak dan hindari mengambil foto di tempat-tempat yang dianggap suci atau sensitif secara budaya.</string>
+    <string name="etikafotografi2" translatable="false">Beberapa candi melarang penggunaan flash untuk melindungi benda-benda seni dan artefak dari kerusakan.</string>
+    <string name="etikafotografi3" translatable="false">Saat mengambil foto, hindari menghalangi pandangan pengunjung lain atau mengganggu dengan penggunaan tripod yang memakan banyak ruang.</string>
+    <string name="etikafotografi4" translatable="false">Jangan mengambil foto orang lain tanpa izin, dan hindari merakam video di area yang dianggap pribadi atau sensitif.</string>
+    <string name="etikafotografi5" translatable="false">Jika Anda membawa drone, pastikan untuk mematuhi peraturan penggunaan dan menghindari mengoperasikannya di area terlarang atau yang dapat mengganggu keamanan candi.</string>
+    <string name="etikaKL1" translatable="false">Jagalah kebersihan dengan membuang sampah pada tempatnya, dan hindari meninggalkan sampah di area candi.</string>
+    <string name="etikaKL2" translatable="false">Jangan merusak atau memetik tanaman di sekitar candi, agar lingkungan sekitar tetap asri dan terjaga.</string>
+    <string name="etikaKL3" translatable="false">Jika ada tempat sampah di sekitar candi, gunakan tempat sampah tersebut untuk membuang sampah agar memudahkan pengelolaan limbah.</string>
+    <string name="etikaKL4" translatable="false">Untuk meminimalkan jejak sampah, bawa tas sampah sendiri dan selalu siap membuang sampah pada tempatnya, bahkan jika tidak ada tempat sampah yang tersedia.</string>
+    <string name="memahamisejarah1" translatable="false">Hindari menyentuh atau merusak artefak sejarah yang ada di candi.</string>
+    <string name="memahamisejarah2" translatable="false">Jika memiliki pertanyaan mengenai sejarah candi, tanyakan pada pengelola atau pemandu wisata yang mungkin ada.</string>
+    <string name="memahamisejarah3" translatable="false">Untuk melindungi artefak dan struktur sejarah, ikuti jalur atau rute yang ditentukan oleh pengelola candi dan hindari melewati area yang mungkin merusak situs bersejarah.</string>
+    <string name="memahamisejarah4" translatable="false">Tidak boleh mencuri atau mencoba menyimpan artefak dari candi, karena itu melanggar hukum dan merugikan keberlanjutan warisan budaya.</string>
+    <string name="memahamisejarah5" translatable="false">indari melakukan perubahan atau modifikasi terhadap struktur asli candi, termasuk menambahkan tulisan atau gambar, untuk mempertahankan keaslian dan integritas sejarah.</string>
+    <string name="ketertibandanK1" translatable="false">Berkunjunglah sesuai dengan jam operasional yang ditetapkan untuk menjaga ketertiban dan menghormati waktu istirahat.</string>
+    <string name="ketertibandanK2" translatable="false">Selalu awasi dan pertahankan barang berharga Anda agar tidak terjadi pencurian atau kehilangan di area candi.</string>
+    <string name="ketertibandanK3" translatable="false">Jika ada kerumunan besar pengunjung, hindari menerobos dan pertahankan jarak untuk menghindari situasi yang tidak aman.</string>
+    <string name="ketertibandanK4" translatable="false">Jika terjadi situasi darurat, kenali dan ikuti jalur evakuasi yang ditentukan untuk keamanan bersama dan mendukung upaya evakuasi.</string>
+    <string name="ketertibandanK5" translatable="false">Hindari berkelompok terlalu kecil atau berjalan sendirian di tempat-tempat sepi, terutama saat jam operasional sudah berakhir, untuk menjaga keamanan pribadi.</string>
+    <string name="no_favorite">You have no favorite</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="tulis_email">Tulis email yang di pakai saat registrasi!</string>
+    <string name="kirim">Kirim</string>
 </resources>
